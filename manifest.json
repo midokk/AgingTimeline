@@ -1,0 +1,17 @@
+{
+  "name": "AgingTimeline",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Plugin to make timeline looks old.",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "http://*/"
+  ],
+  "content_scripts": [{
+    "matches": ["http://www.facebook.com/*"],
+    "css": ["css/style.css"],
+    "js": ["js/jquery.min.js", "js/script.js"]
+  }]
+}
